@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #faf8f5;
+    --surface-card: #ffffff;
+    --surface-secondary: #f4efe6;
+    --surface-tertiary: #ede7dc;
+    --border-color: #e8e3da;
+    --border-darker: #d6cfc2;
+    --text-primary: #141210;
+    --text-secondary: #57534e;
+    --text-muted: #8c857b;
+    
+    --brand-lilac: #5b21b6;
+    --brand-lilac-subtle: #f5f3ff;
+    --brand-gold: #c5a880;
+    --brand-gold-muted: #e8ded1;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Luxury Typography */
+.font-editorial {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Quiet Luxury Badges */
+.luxury-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #57534e;
+  font-weight: 600;
+}
+
+/* Pristine Card Surfaces with Soft Hairline Borders */
+.luxury-card {
+  background-color: #ffffff;
+  border: 1px solid #e8e3da;
+  box-shadow: 0 1px 3px rgba(20, 18, 16, 0.02), 0 12px 32px -8px rgba(20, 18, 16, 0.04);
+}
+
+.luxury-card-subtle {
+  background-color: #f7f4ee;
+  border: 1px solid #e8e3da;
+}
+
+/* Custom Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #faf8f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6cfc2;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8ad9e;
+}
